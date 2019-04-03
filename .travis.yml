@@ -1,0 +1,21 @@
+language: node_js
+node_js: node
+cache:
+  directories:
+  - node_modules
+env:
+- CI=true
+notifications:
+  email:
+    recipients:
+    - klick5000@gmail.com
+    - coracardoni@gmail.com
+    on_success: always
+    on_failure: always
+deploy:
+  provider: heroku
+  api_key:
+    secure: M2s3k/UYTwku9DTWv1GLiAcLzU+sld96mnwITkqg2m/HEevl0a4LdPCtF69vW1N1EdGJjSHvUsF2jbwyHep55SofEClmO1QO3iAmoaaIZcKUVo6WxHRfq5bXEXnZrqzKkh3QmjZSDXBkn66jedbaRWsxaaXPxe6OhvAxXBxYinQdKwua/SuncuW51COIAXia1Q6Ix78CLbqPHOycB4QpIPN+txomZOYmykSu+n1Fn4H+yhQov/G3FFVMXFQyzjDL2L5x7XJ0JYkWWJNZtOtr4ibLhbeCAmB+sGc00rlJL45hyTvnTO+GZSn8p8bB875vdgLqgn1vg2+5i7tbcGd+ij1wbv8drtg6bJJpMdSlKDL3DsKST5jIXVmGbMZfaAeBOMnQ0EnvrrPuzNykqR30WKItGqJZcCkA0c9xgaL2+GmSjG4oNABYjbiBNJ7GVWN9NEFdqrmhTKtzsZ8cA0k6gfkD78tDUTst0z78IpYvoq3cLPcWpSzAS89SY18a4UqGn86OIwws1+TZECMZrBbddDaOJwYTAf7+SpoEPCsOo+T0tvHEb5qTsghchn6ViyZdIrpRNg27LOSDDyIlof8xZQyL+N+yIbTvwD2nn5FvojqUPEHluhR9b5fZIVuzJj0AGFTIrzZc7paSSIvBgng47wAnfp28QDddxkiq/ILMh6w=
+  app: serene-oasis-46934
+  on:
+    repo: KliCk5000/fullstack-practice-server
