@@ -11,7 +11,7 @@ mongoose.connect(keys.mongoURI, { useNewUrlParser: true });
 
 const app = express();
 
-app.use(morgan('tiny'))
+app.use(morgan('tiny'));
 
 app.use(
   cookieSession({
